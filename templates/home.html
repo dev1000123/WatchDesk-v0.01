@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<a href="/create-post"><button>Want to make a post? click here</button></a>
+<H1>POSTS</H1>
+{% for doc in data %}
+<div>
+    <h2>{{doc["heading"]}}</h2>
+    <p>{{doc["content"]}}</p>
+    <p>By-{{doc["author"]}}</p>
 
+</div>
+{% endfor %}
+
+</body>
+</html>
